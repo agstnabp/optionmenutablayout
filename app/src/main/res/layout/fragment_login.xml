@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ic_username"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_person_24"
+        android:layout_below="@+id/text_title"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/usernamelogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_toEndOf="@+id/ic_username"
+        android:layout_below="@+id/text_title"
+        android:layout_marginTop="200dp"
+        android:textSize="20dp"
+        android:hint="Username" />
+
+    <ImageView
+        android:id="@+id/ic_camera"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_person_24"
+        android:layout_below="@+id/usernamelogin"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/passwordlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_toEndOf="@+id/ic_camera"
+        android:layout_below="@+id/usernamelogin"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/passwordlogin"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Login" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/buttonlogin"
+        android:layout_centerHorizontal="true"
+        >
+
+
+    </LinearLayout>
+
+</RelativeLayout>
